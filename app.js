@@ -19,8 +19,14 @@ app.controller('ProductFilterCtrl', function($scope, $http) {
     $scope.selectedFilters  = {};
     
     
+    var csvFile = "products.csv";
+    
+    // this can be removed. it only makes github preview working (cross domain issue)
+    if( window.location.host === 'htmlpreview.github.io' )
+        csvFile = "http://htmlpreview.github.io/?https://github.com/axax/ng-product-finder/master/"+csvFile;
+    
     // load csv data and convert it to a json
-    $http.get('products.csv').then(function(res) {
+    $http.get(csvFile).then(function(res) {
         
         $scope.filteredProducts = $scope.products = csv2json(res.data,";");
         
