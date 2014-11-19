@@ -1,4 +1,4 @@
-ng-product-finder
-=================
+AngularJS product finder example
+================================
 
-AngularJS lightweight product finder example based on a CSV file
+An AngularJS lightweight product finder example based on a CSV file
