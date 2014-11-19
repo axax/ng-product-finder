@@ -1,7 +1,7 @@
 AngularJS product finder example
 ================================
 
-This is a lightweight angularJS product finder example based on a CSV file. It consists only of three files: the view (index.html), the controller (app.js) and the data (products.csv). This is a little demonstration of how to read a csv file and of how to apply queries and filters to this data. 
+This is a lightweight angularJS "product finder" example based on a CSV file. It consists only of three files: the view (index.html), the controller (app.js) and the data (products.csv). It demonstrates how to read a csv file and how to use its data to apply queries and filters. 
 
 
 ### ***Live Demo***

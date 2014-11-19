@@ -22,7 +22,6 @@ app.controller('ProductFilterCtrl', function($scope, $http) {
     // load csv data and convert it to a json
     $http.get("products.csv").success(function(data) {
         $scope.filteredProducts = $scope.products = csv2json(data);
-        console.log(JSON.stringify($scope.products));
         generateFilters();
         
         
